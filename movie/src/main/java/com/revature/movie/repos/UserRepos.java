@@ -18,6 +18,23 @@ import java.util.Set;
 
 public class UserRepos implements CrudRepository {
 
+
+
+
+    public void updateFavoriteList (FavoriteList l, int id){
+
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        User u = session.load(User.class, id);
+        u.addLists(l);
+        session.update(u);
+        session.getTransaction().commit();
+        session.close();
+
+
+    }
+
+
     public List<FavoriteList> findFavoriteByUserId(int id){
         List<FavoriteList> fl = new ArrayList<>();
         User u = findUserById(id);

@@ -68,11 +68,33 @@ public class Driver {
 //        System.out.println(u.getList());
 //        for (FavoriteList f : u.getList())
 //        System.out.println(f.getMovieName());
+
+        FavoriteList l = new FavoriteList("hello kitty ",1343);
+
+        repos.updateFavoriteList(l,42);
+
+
+
         List<FavoriteList> a = repos.findFavoriteByUserId(42);
         for (FavoriteList f : a){
             System.out.println(f.getMovieName());
             System.out.println(f.getApiId());
         }
+
+
+    }
+
+
+
+    public static void update (FavoriteList l){
+
+        Session session = factory.openSession();
+        session.beginTransaction();
+        User u = session.load(User.class, 42);
+        u.addLists(l);
+        session.update(u);
+        session.getTransaction().commit();
+        session.close();
 
 
     }
