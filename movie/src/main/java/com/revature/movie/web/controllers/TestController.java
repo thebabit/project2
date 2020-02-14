@@ -4,7 +4,6 @@ package com.revature.movie.web.controllers;
 import com.revature.movie.model.User;
 import com.revature.movie.services.UserService;
 import com.revature.movie.web.dtos.Credentials;
-import com.revature.movie.web.dtos.Principal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;

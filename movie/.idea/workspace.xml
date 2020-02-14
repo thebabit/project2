@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ca5e51-f82d-4be9-a328-764b48aa384c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/Flservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/FavoriteListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/FavoriteListCreds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/.idea/resources.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/FavoriteListRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/FavoriteListRepos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/filters/AppFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/filters/AppFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/FavoriteListRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/FavoriteListRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/filters/AppFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/filters/AppFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/FavoriteListRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/FavoriteListRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
