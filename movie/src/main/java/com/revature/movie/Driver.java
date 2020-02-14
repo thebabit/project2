@@ -1,6 +1,24 @@
 package com.revature.movie;
 
+import com.revature.movie.model.User;
+import com.revature.movie.repos.UserRepos;
+import com.revature.movie.services.UserService;
+import com.revature.movie.web.dtos.Credentials;
+import org.hibernate.SessionFactory;
+
 public class Driver {
+
+    private static SessionFactory sessionFactory;
+    public static void main(String[] args) {
+
+        Credentials creds = new Credentials();
+        creds.setUsername("hle");
+        creds.setPassword("pass");
+
+        User u = new UserRepos(sessionFactory).findUserByCredentials(creds);
+        System.out.println(u.toString());
+
+    }
 
 //    private static SessionFactory factory = HibernateUtil.getSessionFactory();
 //    public static void main(String[] args) {

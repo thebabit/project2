@@ -21,13 +21,18 @@ public class UserRepos implements CrudRepository {
 
     private SessionFactory sessionFactory;
 
+
+
+
     public User findUserByCredentials(Credentials creds) {
 
         Session session = sessionFactory.getCurrentSession();
-        return session.createQuery("from AppUser au where au.username = :un and au.password = :pw", User.class)
+        User u = new User();
+        u = session.createQuery("from User where username = :un and password = :pw", User.class)
                 .setParameter("un", creds.getUsername())
                 .setParameter("pw", creds.getPassword())
                 .getSingleResult();
+        return u;
 
     }
 
@@ -64,28 +69,34 @@ public class UserRepos implements CrudRepository {
     public User auth(String username, String password) {
 
         User u = new User();
-        Session session = sessionFactory.getCurrentSession();
-        CriteriaBuilder queryBuilder = session.getCriteriaBuilder();
+
+        try {
+
+            Session session = sessionFactory.getCurrentSession();
+            CriteriaBuilder queryBuilder = session.getCriteriaBuilder();
 
 
-        CriteriaQuery<User> critQuery = queryBuilder.createQuery(User.class);
+            CriteriaQuery<User> critQuery = queryBuilder.createQuery(User.class);
 
 
-        Root<User> queryRoot = critQuery.from(User.class);
+            Root<User> queryRoot = critQuery.from(User.class);
 
 
-        critQuery.select(queryRoot);
+            critQuery.select(queryRoot);
 
 
-        critQuery.where(
-                queryBuilder.equal(queryRoot.get("username"), username),
-                queryBuilder.equal(queryRoot.get("password"), password)
-        );
+            critQuery.where(
+                    queryBuilder.equal(queryRoot.get("username"), username),
+                    queryBuilder.equal(queryRoot.get("password"), password)
+            );
 
-        List<User> userList = session.createQuery(critQuery).getResultList();
-        u = userList.get(0);
+            List<User> userList = session.createQuery(critQuery).getResultList();
+            u = userList.get(0);
+            return u;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return u;
-
     }
 
 
@@ -93,6 +104,12 @@ public class UserRepos implements CrudRepository {
         Session session = sessionFactory.getCurrentSession();
         session.save(u);
 
+    }
+
+    public User save1(User newObj) {
+        Session session = sessionFactory.getCurrentSession();
+        session.save(newObj);
+        return newObj;
     }
 
     public User findUserById(int id){

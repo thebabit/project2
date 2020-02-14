@@ -1,6 +1,7 @@
 package com.revature.movie.repos;
 
 import com.revature.movie.model.FavoriteList;
+import com.revature.movie.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,13 @@ public class FavoriteListRepos  {
     public FavoriteList findById(int id){
         Session session = sessionFactory.getCurrentSession();
         return session.get(FavoriteList.class, id);
+
+    }
+
+    public FavoriteList add(FavoriteList u){
+        Session session = sessionFactory.getCurrentSession();
+        session.save(u);
+        return u;
 
     }
 }

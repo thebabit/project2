@@ -22,8 +22,8 @@ public class UserController {
     }
 
     @PostMapping(produces=MediaType.APPLICATION_JSON_VALUE, consumes=MediaType.APPLICATION_JSON_VALUE)
-    public void registerNewUser(@RequestBody User newUser) {
-        userService.register(newUser);
+    public User registerNewUser(@RequestBody User newUser) {
+        return userService.register1(newUser);
     }
 
 }
