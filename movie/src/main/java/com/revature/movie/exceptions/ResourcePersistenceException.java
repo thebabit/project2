@@ -1,13 +1,17 @@
 package com.revature.movie.exceptions;
 
-public class ResourcePersistenceException extends RuntimeException {
+public class ResourcePersistenceException extends QuizzardException {
 
     public ResourcePersistenceException() {
-        super("Resource not persisted!");
+        super("Resource could not be persisted!");
     }
 
     public ResourcePersistenceException(String message) {
         super(message);
+    }
+
+    public ResourcePersistenceException(String message, Throwable cause) {
+        super(message, cause);
     }
 
 }

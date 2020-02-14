@@ -2,10 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ca5e51-f82d-4be9-a328-764b48aa384c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/QuizzardException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/util/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/filters/AppFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/AuthenticationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/AuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/AuthorizationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/AuthorizationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/ResourcePersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions/ResourcePersistenceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/model/FavoriteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/model/FavoriteList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/CrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/FavoriteListRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/FavoriteListRepos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/util/HibernateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/movie.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/AuthenticationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/AuthenticationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/AuthorizationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/AuthorizationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/ResourcePersistenceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/exceptions/ResourcePersistenceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/model/FavoriteList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/model/FavoriteList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/CrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/FavoriteListRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/FavoriteListRepos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/util/HibernateUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +76,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/revature/movie/exceptions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.revature.movie.model" />
+      <recent name="com.revature.movie" />
       <recent name="com.revature.movie.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hoang peo\Desktop\code\project2\movie\src\main\java\com\revature\movie\exceptions" />
       <recent name="C:\Users\hoang peo\Desktop\code\project2\movie\src\main\resources" />
+      <recent name="C:\Users\hoang peo\Desktop\code\project2\movie\src\main" />
+      <recent name="C:\Users\hoang peo\Desktop\code\project2\movie\src\main\java\com\revature\movie" />
+      <recent name="C:\Users\hoang peo\Desktop\code\project2\movie\src\main\java\com\revature\movie\exceptions" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,10 +137,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1581198994704">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1581650136744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581198994704" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581650136744" />
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581186994274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -108,22 +149,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581117696698" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1581274667366">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1581522955410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581274667366" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1581274667366">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581522955410" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1581522955410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581274667366" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1581274667366">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581522955410" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1581522955410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581274667366" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1581274667366">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581522955410" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1581522955410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581274667366" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581522955410" />
+    <state x="896" y="174" key="Maven.ArtifactSearchDialog" timestamp="1581641392360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="896" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581641392360" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581190072656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

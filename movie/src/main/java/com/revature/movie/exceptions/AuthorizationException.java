@@ -1,9 +1,12 @@
 package com.revature.movie.exceptions;
 
-public class AuthorizationException extends RuntimeException {
+public class AuthorizationException extends QuizzardException {
 
     public AuthorizationException() {
-        super("You do not have the proper permissions to perform that action!");
+        super("Requester lacks the proper authorities to perform that action!x");
     }
 
+    public AuthorizationException(String message) {
+        super(message);
+    }
 }

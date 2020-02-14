@@ -1,6 +1,8 @@
 package com.revature.movie.model;
 
 
+import com.revature.movie.web.dtos.Principal;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +38,7 @@ public class User {
     private String email;
 
     @Column(nullable=false)
-    private String role;
+    private UserRole role;
 
     @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
@@ -49,7 +51,7 @@ public class User {
     public User() {super();
     }
 
-    public User(String firstName, String lastName, String username, String password, int failTime, String email, String role) {
+    public User(String firstName, String lastName, String username, String password, int failTime, String email, UserRole role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
@@ -59,7 +61,7 @@ public class User {
         this.role = role;
     }
 
-    public User(int id, String firstName, String lastName, String username, String password, int failTime, String email, String role) {
+    public User(int id, String firstName, String lastName, String username, String password, int failTime, String email, UserRole role) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -70,7 +72,16 @@ public class User {
         this.role = role;
     }
 
-    public User(String firstName, String lastName, String username, String password, int failTime, String email, String role, List<FavoriteList> list) {
+    public User(String firstName, String lastName, String username, String password, int failTime, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
+        this.failTime = failTime;
+        this.email = email;
+    }
+
+    public User(String firstName, String lastName, String username, String password, int failTime, String email, UserRole role, List<FavoriteList> list) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
@@ -81,7 +92,7 @@ public class User {
         this.list = list;
     }
 
-    public User(int id, String firstName, String lastName, String username, String password, int failTime, String email, String role, List<FavoriteList> list) {
+    public User(int id, String firstName, String lastName, String username, String password, int failTime, String email, UserRole role, List<FavoriteList> list) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -158,15 +169,17 @@ public class User {
         this.email = email;
     }
 
-    public String getRole() {
+    public UserRole getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(UserRole role) {
         this.role = role;
     }
 
-
+    public Principal extractPrincipal() {
+        return new Principal(this.id, this.username, this.role);
+    }
     public void addLists(FavoriteList... users1) {
         if (list == null) list = new ArrayList<>();
         for (FavoriteList u : users1) {

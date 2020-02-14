@@ -29,19 +29,19 @@ public class FavoriteList {
     private String movieName;
 
     @Column( name = "API_ID", nullable = false)
-    private int apiId;
+    private String apiId;
 
 
     public FavoriteList() {
         super();
     }
 
-    public FavoriteList(String movieName, int apiId) {
+    public FavoriteList(String movieName, String apiId) {
         this.movieName = movieName;
         this.apiId = apiId;
     }
 
-    public FavoriteList(int favoriteId, List<User> users, String movieName, int apiId) {
+    public FavoriteList(int favoriteId, List<User> users, String movieName, String apiId) {
         this.favoriteId = favoriteId;
         this.users = users;
         this.movieName = movieName;
@@ -76,11 +76,11 @@ public class FavoriteList {
         this.movieName = movieName;
     }
 
-    public int getApiId() {
+    public String getApiId() {
         return apiId;
     }
 
-    public void setApiId(int apiId) {
+    public void setApiId(String apiId) {
         this.apiId = apiId;
     }
 
