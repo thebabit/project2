@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bd5383e-c440-492e-8e85-4ffa8fdcca67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java/com/revature/movie/web/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/revature/movie/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/revature/movie/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/revature/movie/repos/UserRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/revature/movie/repos/UserRepos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/revature/movie/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/revature/movie/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/com/revature/movie/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT/WEB-INF/classes/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT/WEB-INF/classes/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1Xnokswr7QMA3OsqSZ7AcNMTUrz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/project2-master/project2-master/movie" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bd5383e-c440-492e-8e85-4ffa8fdcca67" name="Default Changelist" comment="" />
+      <created>1581691365866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581691365866</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581691447597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581691447597" />
+  </component>
+</project>

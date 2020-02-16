@@ -18,6 +18,8 @@ public class FavoriteListRepos  {
         this.sessionFactory = factory;
     }
 
+
+
     public FavoriteList findById(int id){
         Session session = sessionFactory.getCurrentSession();
         return session.get(FavoriteList.class, id);
@@ -30,4 +32,6 @@ public class FavoriteListRepos  {
         return u;
 
     }
+
+
 }

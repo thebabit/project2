@@ -16,14 +16,6 @@ public class FavoriteList {
     private int favoriteId;
 
 
-    @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-    @JoinTable(
-            name="favorite_user",
-            joinColumns=@JoinColumn(name="favoriteId"),
-            inverseJoinColumns=@JoinColumn(name="id")
-    )
-    private List<User> users;
-
 
     @Column(name = "MOVIE_NAME", nullable = false)
     private String movieName;
@@ -41,9 +33,8 @@ public class FavoriteList {
         this.apiId = apiId;
     }
 
-    public FavoriteList(int favoriteId, List<User> users, String movieName, String apiId) {
+    public FavoriteList(int favoriteId,  String movieName, String apiId) {
         this.favoriteId = favoriteId;
-        this.users = users;
         this.movieName = movieName;
         this.apiId = apiId;
     }
@@ -60,13 +51,7 @@ public class FavoriteList {
         this.favoriteId = favoriteId;
     }
 
-    public List<User> getUsers() {
-        return users;
-    }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
-    }
 
     public String getMovieName() {
         return movieName;
@@ -84,12 +69,6 @@ public class FavoriteList {
         this.apiId = apiId;
     }
 
-    public void addUsers(User... users1) {
-        if (users == null) users = new ArrayList<>();
-        for (User u : users1) {
-            users.add(u);
-        }
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -98,20 +77,18 @@ public class FavoriteList {
         FavoriteList that = (FavoriteList) o;
         return favoriteId == that.favoriteId &&
                 apiId == that.apiId &&
-                Objects.equals(users, that.users) &&
                 Objects.equals(movieName, that.movieName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(favoriteId, users, movieName, apiId);
+        return Objects.hash(favoriteId, movieName, apiId);
     }
 
     @Override
     public String toString() {
         return "FavoriteList{" +
                 "favoriteId=" + favoriteId +
-                ", users=" + users +
                 ", movieName='" + movieName + '\'' +
                 ", apiId=" + apiId +
                 '}';

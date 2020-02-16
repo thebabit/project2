@@ -46,9 +46,26 @@ public class UserRepos implements CrudRepository {
     public void updateFavoriteList (FavoriteList l, int id){
 
         Session session = sessionFactory.getCurrentSession();
-        User u = session.load(User.class, id);
+        User u = session.get(User.class, id);
         u.addLists(l);
         session.update(u);
+
+
+    }
+
+    public User updateFavoriteList1 (FavoriteList l, int id){
+
+        FavoriteListRepos a = new FavoriteListRepos(sessionFactory);
+        a.add(l);
+        Session session = sessionFactory.getCurrentSession();
+
+        User u = session.createQuery("insert into User_favorite (UserId, favoriteId) values (:uid, :fid)", User.class)
+                .setParameter("uid", id)
+                .setParameter("fid", l.getFavoriteId())
+                .getSingleResult();
+
+        return u;
+
 
     }
 
