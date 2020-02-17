@@ -1,6 +1,7 @@
 package com.revature.movie.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 @Entity
 @Table(name = "MOVIES_LIKES")
@@ -14,6 +15,14 @@ public class MovieLikes {
     private String title;
     @Column(name = "LIKES")
     private int likes;
+
+    @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+    @JoinTable(
+            name="like_user",
+            joinColumns=@JoinColumn(name="likeId"),
+            inverseJoinColumns=@JoinColumn(name="id")
+    )
+    private List<Integer> users;
 
     public MovieLikes() {
         super();
@@ -52,6 +61,19 @@ public class MovieLikes {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public List<Integer> getUserId() {
+        return users;
+    }
+
+    public void setUsers(List<Integer> users) {
+        this.users = users;
+    }
+
+    public List<Integer> add(Integer userId){
+        this.users.add(userId);
+        return this.users;
     }
 
     @Override
