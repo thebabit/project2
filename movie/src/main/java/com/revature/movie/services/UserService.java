@@ -51,6 +51,38 @@ public class UserService {
     }
 
     @Transactional
+    public int failcheck(Credentials creds) {
+
+        if (creds == null || creds.getUsername() == null || creds.getPassword() == null
+                || creds.getUsername().equals("") || creds.getPassword().equals(""))
+        {
+            throw new BadRequestException("Invalid credentials object provided!");
+        }
+
+
+        String us = creds.getUsername();
+        String pw = creds.getPassword();
+        int i = userRepo.failcheck(us,pw);
+
+       return i;
+
+    }
+
+    @Transactional
+    public User unblock(String username) {
+
+        return userRepo.unblock(username);
+
+    }
+
+    @Transactional
+    public void deleteUser(String username) {
+
+         userRepo.deleteUser(username);
+
+    }
+
+    @Transactional
     public void register(User newUser) {
 
         // validation would go here...

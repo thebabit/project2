@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 @RequestMapping("/test")
 public class TestController {
@@ -24,9 +26,20 @@ public class TestController {
     }
 
     @PostMapping(produces=MediaType.APPLICATION_JSON_VALUE, consumes=MediaType.APPLICATION_JSON_VALUE)
-    public User authenticate(@RequestBody Credentials creds) {
+    public User authenticate(@RequestBody Credentials creds, HttpServletResponse response) {
 
 
-        return userService.auth(creds);
+        int i = userService.failcheck(creds);
+        if(i == 0){
+            response.setStatus(HttpServletResponse.SC_NON_AUTHORITATIVE_INFORMATION);//203
+            return null;
+        }else if (i== 3){
+            response.setStatus(HttpServletResponse.SC_NO_CONTENT);//204
+            return null;
+        }
+       else{
+            return userService.auth(creds);
+        }
+
     }
 }

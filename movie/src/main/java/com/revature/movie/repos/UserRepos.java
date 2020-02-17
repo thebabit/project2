@@ -117,6 +117,124 @@ public class UserRepos implements CrudRepository {
     }
 
 
+    public void deleteUser(String username) {
+
+        User u = new User();
+
+        try {
+
+            Session session = sessionFactory.getCurrentSession();
+            CriteriaBuilder queryBuilder = session.getCriteriaBuilder();
+
+
+            CriteriaQuery<User> critQuery = queryBuilder.createQuery(User.class);
+
+
+            Root<User> queryRoot = critQuery.from(User.class);
+
+
+            critQuery.select(queryRoot);
+
+
+            critQuery.where(
+                    queryBuilder.equal(queryRoot.get("username"), username)
+            );
+
+            List<User> userList = session.createQuery(critQuery).getResultList();
+            u = userList.get(0);
+            session.delete(u);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public User unblock(String username) {
+
+        User u = new User();
+
+        try {
+
+            Session session = sessionFactory.getCurrentSession();
+            CriteriaBuilder queryBuilder = session.getCriteriaBuilder();
+
+
+            CriteriaQuery<User> critQuery = queryBuilder.createQuery(User.class);
+
+
+            Root<User> queryRoot = critQuery.from(User.class);
+
+
+            critQuery.select(queryRoot);
+
+
+            critQuery.where(
+                    queryBuilder.equal(queryRoot.get("username"), username)
+            );
+
+            List<User> userList = session.createQuery(critQuery).getResultList();
+            u = userList.get(0);
+            u.setFailTime(0);
+            session.update(u);
+            return u;
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return u;
+    }
+
+    public int failcheck(String username, String password) {
+
+        int checkfail = 0 ;
+        User u = new User();
+
+        try {
+
+            Session session = sessionFactory.getCurrentSession();
+            CriteriaBuilder queryBuilder = session.getCriteriaBuilder();
+
+
+            CriteriaQuery<User> critQuery = queryBuilder.createQuery(User.class);
+
+
+            Root<User> queryRoot = critQuery.from(User.class);
+
+
+            critQuery.select(queryRoot);
+
+
+            critQuery.where(
+                    queryBuilder.equal(queryRoot.get("username"), username)
+            );
+
+            List<User> userList = session.createQuery(critQuery).getResultList();
+            u = userList.get(0);
+            if(u.getFailTime() < 5){
+                if (u.getPassword().equals(password)){
+                    u.setFailTime(0);
+                    session.update(u);
+                    return 1;
+                }else {
+                    checkfail = u.getFailTime() + 1;
+                    u.setFailTime(checkfail);
+                    session.update(u);
+                    return 0;
+                }
+            }else {
+                return 3;//lock
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+
     public void register(User u){
         Session session = sessionFactory.getCurrentSession();
         session.save(u);
