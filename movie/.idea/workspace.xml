@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ca5e51-f82d-4be9-a328-764b48aa384c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/DeleteUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UnBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/UnblockCreds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/repos/UserRepos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UnBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/controllers/UnBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/UnblockCreds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/movie/web/dtos/UnblockCreds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/UnBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/controllers/UnBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/movie/web/dtos/UnblockCreds.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/movie/web/dtos/UnblockCreds.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/UserRepos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/repos/UserRepos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/UnBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/controllers/UnBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/dtos/UnblockCreds.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/movie-1.0-SNAPSHOT/WEB-INF/classes/com/revature/movie/web/dtos/UnblockCreds.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../repos/191216-java-usf/hoang_le_code/Week_8/gs-producing-web-service-master" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -112,10 +108,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1581913844665">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1581962909515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581913844665" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581962909515" />
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581696251660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -124,26 +120,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581186994274" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581691363814">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582054497215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581691363814" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1581904230333">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582054497215" />
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1581917389147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581904230333" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1581904230333">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581917389147" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1581917389146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581904230333" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1581904230333">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581917389146" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1581917389146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581904230333" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1581904230333">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581917389146" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1581917389146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581904230333" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581917389146" />
     <state x="896" y="174" key="Maven.ArtifactSearchDialog" timestamp="1581641392360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
