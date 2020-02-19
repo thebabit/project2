@@ -16,11 +16,11 @@ public class MovieLikes {
     @Column(name = "LIKES")
     private int likes;
 
-    @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+    @Id
     @JoinTable(
             name="like_user",
-            joinColumns=@JoinColumn(name="likeId"),
-            inverseJoinColumns=@JoinColumn(name="id")
+            joinColumns=@JoinColumn(name="MOVIE_ID"),
+            inverseJoinColumns=@JoinColumn(name="user_id")
     )
     private List<Integer> users;
 
